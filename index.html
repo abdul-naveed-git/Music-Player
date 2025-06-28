@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-text">
+  
+  <h1 class="project-title">
+    <span class="highlight">RhythmOS</span> 
+  </h1>
+  <p class="project-subtitle">Where Code Meets Rhythm </p>
+</div>
+
+      <div class="music-player">
+        <img id="cover-page" src="demo.jpg" alt="Album Cover" />
+        <h3 id="song-name"></h3>
+        <p id="song-author"></p>
+        <audio id="audio"></audio>
+        <select id="playlist">
+        <option value="0">🎵 Daaku Mahaaraj</option>
+        <option value="1">🎵 Andala Sandohama</option>
+        <option value="2">🎵 Prema Velluva</option>
+        <option value="3">🎵 Swathi Reddy</option>
+        <option value="4">🎵  Don’t Stop</option>
+        </select>
+
+
+        <div class="controls">
+          <div class="time-display">
+            <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+          </div>
+          <div>
+          <input type="range" id="progress" value="0" min="0" max="100">
+          <button id="prev">⏮️</button>
+          <button id="playPause">▶️</button>
+          <button id="next">⏭️</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
